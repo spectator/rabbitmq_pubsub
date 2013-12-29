@@ -1,0 +1,10 @@
+#!/usr/bin/env rbx
+
+require 'bundler/setup'
+Bundler.require(:default)
+
+require_relative '../lib/worker'
+require_relative '../lib/consumer'
+
+consumer = Consumer.new
+consumer.run

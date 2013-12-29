@@ -1,0 +1,9 @@
+#!/usr/bin/env rbx
+
+require 'bundler/setup'
+Bundler.require(:default)
+
+require_relative '../lib/producer'
+
+producer = Producer.new
+producer.run
